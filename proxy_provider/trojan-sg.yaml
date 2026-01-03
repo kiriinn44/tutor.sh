@@ -1,0 +1,53 @@
+proxies:
+  - name: tiktok
+    server: api24-normal.tiktokv.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+  - name: facebook
+    server: investor.fb.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+  - name: freefire
+    server: web.poe.garena.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+  - name: vision+
+    server: 104.18.225.52
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
