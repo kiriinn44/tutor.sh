@@ -1,0 +1,85 @@
+proxies:
+- name: llawlytt1
+  type: trojan
+  server: df.game.naver.com
+  port: 443
+  password: 736461e3-ccad-4727-9d42-08c1681dd1b6
+  udp: true
+  sni: at.srpcom.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: at.srpcom.online
+#=================================================
+- name: llawlytt2
+  type: trojan
+  server: 104.18.43.123
+  port: 443
+  password: 736461e3-ccad-4727-9d42-08c1681dd1b6
+  udp: true
+  sni: at.srpcom.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: at.srpcom.online
+      
+- name: llawlytt3
+  type: trojan
+  server: 104.18.214.235
+  port: 443
+  password: 736461e3-ccad-4727-9d42-08c1681dd1b6
+  udp: true
+  sni: at.srpcom.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: at.srpcom.online
+#=================================================
+- name: llawlytt4
+  type: trojan
+  server: sogood.linefriends.com
+  port: 443
+  password: 736461e3-ccad-4727-9d42-08c1681dd1b6
+  udp: true
+  sni: at.srpcom.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: at.srpcom.online
+#=================================================
+- name: llawlytt5-wilcard
+  type: trojan
+  server: investor.fb.com
+  port: 443
+  password: 736461e3-ccad-4727-9d42-08c1681dd1b6
+  udp: true
+  sni: investor.fb.com.at.srpcom.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: investor.fb.com.at.srpcom.online
+#=================================================
+- name: llawlytt6-wilcard
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: 736461e3-ccad-4727-9d42-08c1681dd1b6
+  udp: true
+  sni: ava.game.naver.com.at.srpcom.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: ava.game.naver.com.at.srpcom.online
+#=================================================
