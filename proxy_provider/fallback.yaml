@@ -80,16 +80,3 @@ proxies:
         Host: do4.srpcom.online
     udp: true
 #########################################
-  - name: id.facebook
-    server: investor.fb.com
-    port: 443
-    type: trojan
-    password: 7fd8943c-251d-4a09-94e8-6d94b497f952
-    skip-cert-verify: true
-    sni: cell.karyna.my.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: cell.karyna.my.id
-    udp: true
