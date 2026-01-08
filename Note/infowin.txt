@@ -1,5 +1,0 @@
-
-#windows
-winver
-msinfo
-diskmgmt.msc

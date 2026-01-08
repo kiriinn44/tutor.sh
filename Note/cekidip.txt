@@ -1,4 +1,0 @@
-ping api24-normal.tiktokv.com -4
-nslookup -type=ns api24-normal.tiktokv.com
-nslookup -type=mx api24-normal.tiktokv.com
-whois -v api24-normal.tiktokv.com

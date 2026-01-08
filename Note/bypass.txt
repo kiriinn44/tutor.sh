@@ -1,3 +1,0 @@
-start ms-cxh:localonly
-
-bypass microsoft
