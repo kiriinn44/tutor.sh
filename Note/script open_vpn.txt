@@ -1,0 +1,55 @@
+client
+dev tun
+proto tcp
+remote 49.213.16.131 443
+resolv-retry infinite
+remote-cert-tls server
+nobind
+tun-mtu 1500
+tun-mtu-extra 32
+mssfix 1450
+persist-key
+persist-tun
+<auth-user-pass>
+tcpvpn.com-konan
+akatsuki
+</auth-user-pass>
+comp-lzo
+reneg-sec 0
+verb 3
+
+http-proxy 49.213.16.131 8080
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
+http-proxy-option CUSTOM-HEADER Host help.instagram.com
+http-proxy-option CUSTOM-HEADER X-Online-Host help.instagram.com
+http-proxy-option CUSTOM-HEADER X-Forward-Host help.instagram.com
+http-proxy-option CUSTOM-HEADER Connection keep-alive
+
+//
+
+client
+dev tun
+proto tcp
+remote 49.213.16.120 443
+resolv-retry infinite
+remote-cert-tls server
+nobind
+tun-mtu 1500
+tun-mtu-extra 32
+mssfix 1450
+persist-key
+persist-tun
+<auth-user-pass>
+tcpvpn.com-conan
+conan
+</auth-user-pass>
+comp-lzo
+reneg-sec 0
+verb 3
+
+http-proxy 49.213.16.120 8080
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
+http-proxy-option CUSTOM-HEADER Host help.instagram.com
+http-proxy-option CUSTOM-HEADER X-Online-Host help.instagram.com
+http-proxy-option CUSTOM-HEADER X-Forward-Host help.instagram.com
+http-proxy-option CUSTOM-HEADER Connection keep-alive

@@ -1,0 +1,104 @@
+cara bikin API dalam website? referensi bolt.new ai
+Untuk membuat API di situs web, saya akan menggunakan Bolt Database Edge Functions . Ini adalah cara modern untuk membuat titik akhir API tanpa server.
+Cara Kerja:
+- Edge Function adalah fungsi yang berjalan di server dan bisa dipanggil dari frontend
+- Setiap fungsi memiliki titik akhir URL sendiri
+- Dapat menangani berbagai metode HTTP (GET, POST, PUT, DELETE)
+
+Contoh Penggunaan API:
+1. API untuk mengambil data (GET):
+
+// Membuat endpoint yang mengembalikan daftar data
+Deno.serve(async (req: Request) => {
+  const data = {
+    users: ['Alice', 'Bob', 'Charlie']
+  };
+  
+  return new Response(JSON.stringify(data), {
+    headers: { 'Content-Type': 'application/json' }
+  });
+});
+
+2. API untuk menerima data (POST):
+
+// Membuat endpoint yang menerima dan memproses data
+Deno.serve(async (req: Request) => {
+  const body = await req.json();
+  
+  // Proses data di sini
+  const result = {
+    message: 'Data berhasil diterima',
+    received: body
+  };
+  
+  return new Response(JSON.stringify(result));
+});
+
+3. Memanggil API dari Frontend:
+
+const response = await fetch(`${SUPABASE_URL}/functions/v1/nama-function`, {
+  method: 'POST',
+  headers: {
+    'Authorization': `Bearer ${ANON_KEY}`,
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ name: 'John' })
+});
+
+const data = await response.json();
+
+
+Sekarang saya akan membuat:
+
+Tabel database untuk menyimpan tugas
+Fungsi Edge sebagai titik akhir API
+
+
+Endpoints API yang Tersedia
+Basis URL:https://0ec90b57d6e95fcbda19832f.supabase.co/functions/v1/tasks-api
+
+1. GET - Ambil Semua Tasks
+
+const response = await fetch(
+  'https://0ec90b57d6e95fcbda19832f.supabase.co/functions/v1/tasks-api/tasks'
+);
+const result = await response.json();
+console.log(result.data);
+
+2. POST - Buat Task Baru
+
+const response = await fetch(
+  'https://0ec90b57d6e95fcbda19832f.supabase.co/functions/v1/tasks-api/tasks',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      title: 'Belajar API',
+      description: 'Membuat API dengan Supabase'
+    })
+  }
+);
+const result = await response.json();
+
+3. PUT - Perbarui Tugas
+
+const response = await fetch(
+  'https://0ec90b57d6e95fcbda19832f.supabase.co/functions/v1/tasks-api/tasks/ID-TASK',
+  {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      title: 'Judul baru',
+      description: 'Deskripsi baru',
+      completed: true
+    })
+  }
+);
+
+
+4. DELETE - Hapus Tugas
+
+const response = await fetch(
+  'https://0ec90b57d6e95fcbda19832f.supabase.co/functions/v1/tasks-api/tasks/ID-TASK',
+  { method: 'DELETE' }
+);

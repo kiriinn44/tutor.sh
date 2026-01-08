@@ -1,0 +1,10 @@
+irm https://get.activated.win | iex
+
+active windows
+
+
+irm https://coporton.com/ias | iex
+
+Active IDM
+
+

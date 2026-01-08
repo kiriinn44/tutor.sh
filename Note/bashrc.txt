@@ -1,0 +1,25 @@
+C:/Windows/System32/wsl
+
+
+
+echo cd "/mnt/c/Windows/system32/wsl" >> ~/.bashrc
+
+
+nano ~/.bashrc
+touch ~/.bashrc
+
+source ~/.bashrc
+
+
+
+knp tidak masuk ke folder wsl
+kirinn44@ryn:/mnt/c/Windows/system32$
+
+padahal saya nulis seperti ini di .bashrc
+
+cd "/mnt/c/Windows/system32/wsl"
+
+
+ls /mnt/c/Windows/system32/wsl
+
+sudo mkdir -p /mnt/c/Windows/system32/wsl

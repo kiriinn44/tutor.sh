@@ -1,0 +1,38 @@
+
+pm uninstall -k --user 0 com.amazon.mShop.android.shopping
+pm uninstall -k --user 0 com.google.android.apps.docs
+pm uninstall -k --user 0 com.google.android.apps.magazines
+pm uninstall -k --user 0 com.google.android.videos
+pm uninstall -k --user 0 com.google.android.keep
+pm uninstall -k --user 0 video.like
+pm uninstall -k --user 0 com.linkedin.android
+pm uninstall -k --user 0 com.igg.android.lordsmobile
+pm uninstall -k --user 0 com.google.android.apps.tachyon
+pm uninstall -k --user 0 com.miui.videoplayer
+pm uninstall -k --user 0 com.netflix.mediaclient
+pm uninstall -k --user 0 com.google.android.apps.youtube.music
+pm uninstall -k --user 0 com.iqiyi.i18n
+pm uninstall -k --user 0 com.netflix.mediaclient
+pm uninstall -k --user 0 com.booking
+pm uninstall -k --user 0 com.facebook.katana
+
+
+mi14global blotware
+pm uninstall -k --user 0 com.block.puzzle.game.hippo.mi
+pm uninstall -k --user 0 com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
+pm uninstall -k --user 0 com.crazy.juicer.xm
+pm uninstall -k --user 0 com.logame.eliminateintruder3d
+pm uninstall -k --user 0 com.google.android.apps.podcasts
+pm uninstall -k --user 0 com.google.android.videos
+pm uninstall -k --user 0 com.google.android.apps.youtube.music
+pm uninstall -k --user 0 com.mintgames.triplecrush.tile.fun
+pm uninstall -k --user 0 com.kingsgroup.ss.xiaomi
+pm uninstall -k --user 0 com.google.android.apps.subscriptions.red
+pm uninstall -k --user 0 com.google.android.apps.tachyon
+
+samsung
+pm uninstall -k --user 0 com.microsoft.skydrive
+pm uninstall -k --user 0 com.srin.indramayu
+pm uninstall -k --user 0 com.samsung.android.voc
+pm uninstall -k --user 0 com.samsung.android.rajaampat
+pm uninstall -k --user 0 com.srin.garut

@@ -1,0 +1,7 @@
+C:\Windows\System32\linux2
+
+
+nano ~/.bashrc
+
+# acces to linux2
+cd "/mnt/c/Windows/system32/linux2"

@@ -1,0 +1,149 @@
+proxies:
+  - name: edukasi
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+#########################################
+  - name: id.vision+
+    server: 104.18.225.52
+    port: 443
+    type: trojan
+    password: 7fd8943c-251d-4a09-94e8-6d94b497f952
+    skip-cert-verify: true
+    sni: cell.karyna.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: cell.karyna.my.id
+    udp: true
+  - name: Vision+
+    server: 104.18.225.52
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+#######################################
+  - name: facebook
+    server: investor.fb.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+  - name: wc.facebook
+    server: investor.fb.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: investor.fb.com.do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: investor.fb.com.do4.srpcom.online
+    udp: true
+#######################################
+  - name: tiktok
+    server: 162.159.141.236
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.online
+    udp: true
+  - name: wc.tiktok
+    server: 162.159.141.236
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: 162.159.141.236.do4.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: 162.159.141.236.do4.srpcom.online
+    udp: true
+  - name: tiktok1
+    server: api24-normal.tiktokv.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.cloud
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.cloud
+    udp: true
+#########################################
+  - name: whatsapp
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.cloud
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.cloud
+    udp: true
+  - name: id.spotify
+    server: investors.spotify.com
+    port: 443
+    type: trojan
+    password: 7fd8943c-251d-4a09-94e8-6d94b497f952
+    skip-cert-verify: true
+    sni: cell.karyna.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: cell.karyna.my.id
+    udp: true
+  - name: spotify
+    server: investors.spotify.com
+    port: 443
+    type: trojan
+    password: 450f4857-8ebf-494f-8b4c-0f83ebff3ab7
+    skip-cert-verify: true
+    sni: do4.srpcom.cloud
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: do4.srpcom.cloud
+    udp: true
+##################################

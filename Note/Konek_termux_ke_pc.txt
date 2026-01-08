@@ -1,0 +1,18 @@
+Konek termux ke pc
+#command palatform-tools/cmd
+adb devices
+adb forward tcp:8022 tcp:8022
+ssh localhost -p 8022
+
+#command termux
+
+pkg install openssh
+passwd <untuk membuat password>
+sshd <untuk menjalankan>
+
+#command inisial
+uname -a
+neofetch
+
+
+sudo apt update && sudo apt full-upgrade -y

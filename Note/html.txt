@@ -1,0 +1,103 @@
+Contoh Struktur HTML dan Penjelasan Singkat
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Judul Halaman Web</title>
+</head>
+<body>
+
+<h1>Heading Pertama</h1>
+<p>Teks Paragraf Pertama.</p>
+
+</body>
+</html>
+
+Penjelasan:
+
+<!DOCTYPE html> adalah yang mendefinisikan bahwa dokumen ini merupakan sebuah HTML5 document.
+<html> sebuah root element dari sebuah halaman HTML.
+<head> elemen ini memuat meta information tentang halaman HTML.
+<title> berperan dalam menentukan judul untuk halaman HTML dan akan tampil pada title bar atau tab halaman.
+<body> yang mendefinisikan document body dan menjadi container untuk semua konten yang terlihat.
+<h1> berguna untuk definisi suatu large heading.
+Lalu, elemen <p> akan mendefinisikan sebuah paragraf.
+Cek Konten Lainnya:
+Infografis Umum: 21 Cara Menjadi Orang Jenius & Kreatif
+Apa yang Membedakan antara Tags, Elements & Attributes?
+
+
+Apa Saja Elements Utama dalam HTML?
+Ada sebuah container untuk elemen-elemen pada HTML yang disebut <head>. Berikut ini penjelasan apa itu elemen <head> dan elements lainnya:
+
+1. HTML <head>
+<head> merupakan sebuah wadah atau container untuk metadata yang ditempatkan di antara <html> tag dan <body> tag. Metadata pada HTML ini berisi tentang informasi data dokumen pada HTML itu sendiri. Namun metadata tidak akan tampil pada halaman.
+
+Biasanya metadata yang menentukan judul dokumen, character set, styles, script, dan meta information yang lain.
+
+2. HTML <title>
+<title> inilah yang menentukan judul dokumen dan harus berupa sebuah teks. Judul akan tertampil pada bilah browser dan tab halaman.  
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Apa yang Dimaksud dengan</title>
+
+</head>
+<body>
+
+3. HTML <style>
+<style> inilah yang berperan untuk menentukan style information untuk satu halaman HTML.
+
+Contoh sederhana:
+
+<style>
+
+body  {background-color: green;}
+h1  {color: blue;}
+p  {color: black;}
+
+</style>
+
+4. HTML <link>
+<link> berperan dalam mendefinisikan hubungan antar dokumen saat ini dengan external resource. Tag <link> sering dipakai untuk link ke external style sheet. 
+
+Contohnya:
+
+<link rel=”stylesheet” href=”mystyle.css”>
+
+5. HTML <meta>
+<meta> akan dipakai untuk menentukan character set, deskripsi halaman, keyword, document writer dan viewport setting. Browser akan menggunakan metadata oleh search engine dan web services lainnya.
+
+Satu contoh dalam menentukan keyword untuk search engine:
+
+<meta name=”keywords” content=”HTML, CSS, JavaScript”>
+
+6. HTML <script>
+<script> berguna untuk mendefinisikan client side JavaScript. Seperti berikut dimana JavaScript menulis “Hello You” ke dalam elemen HTML dengan id=”demo”:
+
+<script>
+function myFunction() {
+  document.getElementById(“demo”).innerHTML = “Hello You!”;
+
+}
+</script>
+
+7. HTML <base>
+<base> ini yang menentukan basic URL untuk semua relative URL pada suatu halaman. Tag < base> haru punya attributes href atau target, ataupun keduanya.
+
+Hanya akan ada satu <base> dalam elemen tunggal di satu dokumen.
+
+Contoh sederhana:
+
+<head>
+<base href=”https://www.jagoanhosting.com/” target=”_blank”>
+</head>
+
+<body>
+<img src=”images/GCP.png” width=”24″ height=”39″ alt=”GCP”>
+<a href=”tags/tag_base.asp”>HTML base Tag</a>
+</body>
+
+Dan itulah 7 elemen utama dalam HTML yang harus sobat ketahui untuk memahami apa itu struktur HTML secara mendalam.

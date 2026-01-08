@@ -1,0 +1,5 @@
+Uninstall ms store:
+Get-AppxPackage -alluser WindowsStore | Remove-Appxpackage
+
+Install ms store:
+Get-AppxPackage -AllUsers Microsoft.WindowsStore* | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
